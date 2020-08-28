@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+  <head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" 
+	  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+	  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+	  crossorigin="anonymous">
+	  
+	<title>Contratos</title>
+  </head>
+  <body>
+	   <!--fixed size -->
+	<div class= "container">
+		<h4><b>Capturar contrato</b></h4>
+		<br>
+		<h6 class="text-secondary">Datos de la Escuela</h6>
+		<form>
+			<!--row 1-->
+			<div class="form-row">
+				<div class="form-group col-md-3">
+					<label for="claveEscolar">Clave escolar</label>
+					<input type="text" class="form-control" name="claveEscolar" id="claveEscolar"
+					placeholder="Clave escolar">
+				</div>
+				<div class="form-group col-md-7">
+					<label for="nombreDeLaEscuela">Nombre de la escuela</label>
+					<input type="text" class="form-control" name= "nombreDeLaEscuela" id="nombreDeLaEscuela"
+					placeholder="Nombre de la escuela">
+				</div>
+				<div class="form-group col-md-2 mt-4">
+          <div class="custom-control custom-switch custom-control-inline">
+						<input type="checkbox" class="custom-control-input" id="buscar">
+						<label class="custom-control-label" for="buscar">Nuevo contrato</label>
+					</div>
+				</div>
+			</div>
+			<br>
+			<h6 class="text-secondary">Datos del contrato</h6>
+			<!--row2-->
+			<div class="form-row">
+				<div class="form-group col-md-4" >
+					<label for="fechaInicio">Fecha inicio</label>
+					<input type="date" class="form-control" name="fechaInicio" id="fechaInicio">
+				</div>
+				<div class="form-group col-md-4">
+					<label for="fechaFin">Fecha fin</label>
+					<input type="date" class="form-control" name="fechaFin" id="fechaFin">
+				</div>
+				<div class="form group col-md-4">
+					<label for="escuelaAsociada">Escuela asociada</label>
+					<input type="text" class="form-control" name="escuelaAsociada" id="escuelaAsociada" 
+					placeholder="Escuela seleccionada anteriormente" disabled>
+				</div>
+			</div>
+			<!--row3-->
+			<div class="form-row">
+				<div class="form-group col-md-7">
+					<label for="responsableDelContrato">Responsable del contrato</label>
+					<input type="text" class="form-control" name="responsableDelContrato" 
+					id="responsableDelContrato" placeholder="ResponsableDelContrato">
+				</div>
+				<div class="form group col-md-5">
+					<label for="docPdf">Documento PDF con firmas</label>
+					<div class="input-group">
+						<input type="file" class="custom-file-input" id="validatedCustomFile" required>
+						<label class="custom-file-label" for="validatedCustomFile">Seleccionar archivo</label>
+					</div>
+				</div>
+			</div>
+			<br>
+			<!--row4-->
+			<div class="form-row">
+				<div class="form group col-md-2">
+					<div class="custom-control custom-switch custom-control-inline">
+						<input type="checkbox" class="custom-control-input" id="notificar">
+						<label class="custom-control-label" for="notificar">Renovar contrato</label>
+					</div>
+				</div>
+				<br>
+				<div class="form group col-md-4 offset-md-2">
+					<label for="numContrato">N&#250;mero de contrato anterior</label>
+					<input type="text" class="form-control" name="numContrato" id="numContrato"
+					placeholder="#contrato">
+				</div>
+			</div>
+			<br>
+			<!-- row 5-->
+			<div class="row justify-content-center">      
+				<input class="btn btn-primary mr-1" type="reset" value="Limpiar">  
+				<button type="submit" class="btn btn-primary ml-1">Siguiente</button>
+			</div>
+		</form>
+	</div>
+
+	<!-- JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+	integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+	crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+	integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" 
+	crossorigin="anonymous">
+  </script>
+  <script 
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+	integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
+	crossorigin="anonymous">
+  </script>
+</body>
+</html>
+
